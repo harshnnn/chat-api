@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = socketIo(server, {
     cors: { // Corrected "cros" to "cors"
-        origin: "*",
+        origin: "https://chat-client-sable.vercel.app/",
         methods: ["GET", "POST"]
     }
 });
